@@ -1,0 +1,41 @@
+<%- include('header'); -%>
+<!-- your HTML code -->
+
+<p class="paraHeavy">Find out how much of these Earth’s resources your product consumes</p>
+<div class="card_box">
+<div class="card"><img src="./images/water.png" alt="water image"><p>Water</p></div>
+<div class="card"><img src="./images/plant.png" alt="plant image"><p>Plant</p></div>
+<div class="card"><img src="./images/animal.png" alt="animal image"><p>Animal</p></div>
+<div class="card"><img src="./images/metal.png" alt="metal image"><p>Metals and Minerals</p></div>
+<div class="card"><img src="./images/fossil_fuels.png" alt="fossil fuels image"><p>Fossil Fuel</p></div>
+</div>
+
+<div class="inputBox"><p class="paraHeavy productName">Enter Product Name</p>
+   <% if (locals.error) { %>
+  
+      <p class="paraHeavy"><%= error %></p>
+      <form action="newProduct" method="post">
+      <input class="result" type="submit" value="Enter Data" name="newData">  
+   </form>
+    <% } else { %>
+      <form action="/product" method="POST">
+         <div class="opForm">
+      <input class="item_selector" id="one" type="text" name="userInput" placeholder="First">
+         <!-- <input  class="item_selector op" type="button" value="Option 1" onclick="msg()">
+         <input  class="item_selector op" type="button" value="Option 2" onclick="msg()">
+         <input  class="item_selector op" type="button" value="Option 3" onclick="msg()">
+         <input  class="item_selector op" type="button" value="Option 4" onclick="msg()"> -->
+         <input class="result" type="submit" value="Get Result">
+         </div>
+  </form>
+    <% } %>
+
+
+</div>
+</div>
+<script>
+ 
+         $(".inputBox").width(800)
+ 
+</script>
+<%- include('footer'); -%>

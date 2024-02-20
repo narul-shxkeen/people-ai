@@ -1,0 +1,86 @@
+<%- include('header'); -%>
+<!-- your HTML code -->
+
+<p class="paraHeavy">Find out how much of these Earth’s resources your product consumes</p>
+ <div class="card_box">
+ <div class="card"><img src="./images/water.png" alt="water image"><p>Water</p></div>
+ <div class="card"><img src="./images/plant.png" alt="plant image"><p>Plant</p></div>
+ <div class="card"><img src="./images/animal.png" alt="animal image"><p>Animal</p></div>
+ <div class="card"><img src="./images/metal.png" alt="metal image"><p>Metals and Minerals</p></div>
+ <div class="card"><img src="./images/fossil_fuels.png" alt="fossil fuels image"><p>Fossil Fuel</p></div>
+</div>
+
+</div>
+<div class="earth_wrap">
+<div class="newData">
+    <form>
+        <div class="dataBlock">
+            <label for="productName">Enter Product Name: </label>
+            <input id="productName" type="text">
+        </div>
+        <div class="dataBlock">
+            <label for="productName">Enter Brand Name: </label>
+            <input id="productName" type="text">
+        </div>
+        <div class="ingredientsBlock">
+            <label for="productName">Enter Ingredients: </label>
+            <div>
+            <input id="productName" type="text">
+            <input id="productName" type="text">
+            <input id="productName" type="text">
+            <input id="productName" class="more" style="background-color: #D9D9D9C4; width:150px;font-style: italic;text-decoration: underline;" type="button" value='enter more'>
+        </div>
+        </div>
+        <div class="dataBlock">
+            <label for="productName">Select Category: </label>
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+          
+        </div>
+        <div class="dataBlock">
+            <label for="productName">Size: </label>
+            <input id="productName" type="text">
+        </div>
+        <div class="dataBlock">
+            <label for="productName">Unit of Measurement: </label>
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div class="dataBlock">
+            <label for="productName">Please select consistency of your product: </label>
+            <div>
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <p>If exact option is not available, select the closest possible option.</p>
+        </div>
+        
+        </div>
+
+    </form>
+</div>
+
+</div>
+<div class="productResult">
+<input class="result" type="button" value="Get Result">
+</div>
+<script>
+    $(".more").click(function (){
+    const newInput = $("<input>").attr("type", "text");
+
+    // Append it to the container
+    $(".ingredientsBlock>div").append(newInput);    
+});
+</script>
+<%- include('footer'); -%>

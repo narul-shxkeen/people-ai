@@ -1,0 +1,339 @@
+body{
+    background-image: url("./images/background.png");
+    background-size: auto;
+    padding:0;
+    margin:0;
+}
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 700 */
+.im1{
+    position: relative;
+    top:-25px;
+    height: auto;
+    width: 260px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+.rule1{
+    position: relative;
+    top:-45px;
+    margin-top: 0;
+    padding-top: 0;
+    height:2px;
+    border-width: 2px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: black;
+}
+.rule2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-width: 2px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: black;
+}
+.imCont{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    position: relative;
+    top:-30px;
+}
+.earth_ai{
+    border-radius: 50%;
+    display: block;
+    height: 75px;
+    width:75px;
+    text-align: center;
+}
+.earth_wrap{
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+   overflow: hidden;
+   position: relative;
+   top:-30px;
+}
+.main{
+text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+.paraHeavy{
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 15px;
+  font-style: normal;
+  
+}
+
+.inputBox{margin-top: 40px;
+display: flex;
+flex-direction: column;
+width: 400px;
+justify-content: center;
+align-items: center;
+align-content: center;}
+
+.card_box{
+    display: flex;
+    gap:80px;
+}
+.card{
+    margin-top: 10px;
+    width:130px;
+    text-align: center;
+}
+.card>p{
+    text-align: center;
+    background-color: #D9D9D9;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding:10px;
+    border-radius: 4px;
+}
+.card>img{
+    border-radius: 50%;
+    height:75px;
+    width:75px;
+}
+.inputBox>form>.opForm>.item_selector{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    background-color:#D9D9D9;
+    width: 400px;
+    height:44px;
+    display:none;
+    border-style: none;
+}
+#one{
+    display: block;
+}
+.opForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.op{
+    display: none;
+}
+.result{
+    background: #E4BDB1;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-size: 48px;
+    width:200px;
+    height:46px;
+    margin-top:30px;
+    border-radius: 28px;
+    border-style: none;     
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.foot{
+    display:flex;
+    flex-direction: column;
+}
+a{
+    margin: 5px 30px 5px 30px;
+}
+.black{
+    color: black;
+}
+.last{
+    margin-top: 5px !important;
+}
+.email{
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+.right{
+    text-align: right;
+}
+.footerBox{
+    position: relative;
+    top: 20px;
+}
+.connectBox{
+    margin-top: 40px;
+    width:1000px;
+    /* height:600px; */
+    background: #D9D9D9C4;
+    text-align: right;
+}
+.connectBlock{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    display: flex;
+    justify-content:right;
+    margin-right: 240px !important;
+}
+/* .connectBlock>form{
+    margin-right: 100px;
+} */
+.connectText{
+    background-color:#EBE9E7;
+    width:243px;
+    height:43px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.item_{
+    background-color:#EBE9E7;
+    width:350px;
+    height:43px;
+    margin-top: 0px;
+    margin-left: 10px;
+    border-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: -100px;
+}
+.lastConnect{
+    margin-bottom: 30px;
+}
+.otherText{
+    display:none;
+    margin-top: -3px;
+}
+.newData{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    width:1000px;
+    /* height:600px; */
+    background: #D9D9D9C4;
+    /* margin-left: 200px;
+    margin-right: auto; */
+    padding: 20px;
+}
+.dataBlock{
+    margin-top: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    display: flex;
+    width: 800px;
+    justify-content:space-between;
+}
+.dataBlock>label{
+    width:350px;
+    text-align: left;
+}
+.dataBlock>input{
+    background-color:#EBE9E7;
+    width:400px;
+    height:43px;
+margin-top: -10px;
+    border-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.ingredientsBlock{
+    margin-top: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    width:800px;
+    display: flex;
+    justify-content:space-between;
+}
+.ingredientsBlock>div{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.ingredientsBlock>div>.more{
+    order:99;
+}
+.ingredientsBlock>div>input{
+    background-color:#EBE9E7;
+    width:400px;
+    height:43px;
+margin-top: -10px;
+    border-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.dataBlock>select{
+    background-color:#EBE9E7;
+    width:400px;
+    height:43px;
+margin-top: -10px;
+    border-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding:10px;
+}
+.dataBlock>div>select{
+    background-color:#EBE9E7;
+    width:400px;
+    height:43px;
+margin-top: -10px;
+    border-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding:10px;
+}
+.dataBlock>div{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+
+}
+.dataBlock>div>p{
+    text-align: left;
+    height:43px;
+    margin-top: 0px;
+        border-style: none;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        padding:10px;
+        font-style: italic;
+}
+.productResult{
+    display: flex;
+    justify-content: center;
+}
